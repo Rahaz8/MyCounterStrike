@@ -4,15 +4,15 @@ using UnityEngine;
 
 public abstract class Entity : MonoBehaviour
 {
-    public abstract int HP { get; }
-    public abstract int ARMOR { get; }
+    public abstract int Hp { get; }
+    public abstract int Armor { get; }
     public int hp;
     public int armor;
     [SerializeField] public AudioSource source;
     private void Start()
     {
-        hp = HP;
-        armor = ARMOR;
+        hp = Hp;
+        armor = Armor;
     }
     public void Damage(int damage)
     {
