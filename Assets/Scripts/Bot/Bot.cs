@@ -11,7 +11,7 @@ public class Bot : Entity
 
     public override int ARMOR => 50;
     [SerializeField] NavMeshAgent agent;
-    [SerializeField] BOTweapon weapon;
+    [SerializeField] BotWeapon weapon;
     [SerializeField] Transform player;
     private void Update()
     {

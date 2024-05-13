@@ -1,6 +1,6 @@
 
 using UnityEngine;
-public class BotRifle : BOTweapon
+public class BotRifle : BotWeapon
 {
     protected override int Damage => 34;
 
@@ -8,7 +8,7 @@ public class BotRifle : BOTweapon
 
     protected override float Delay => 0.13F;
 
-    protected override int Magsize => 30;
+    protected override int MagSize => 30;
 
     protected override float ReloadTime => 2;
 

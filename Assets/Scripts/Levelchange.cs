@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Levelchange : MonoBehaviour
+public class LevelChange : MonoBehaviour
 {
     public void Next()
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public abstract class BOTweapon : MonoBehaviour
+public abstract class BotWeapon : MonoBehaviour
 {
     protected abstract int Damage { get; }
-    protected abstract int Magsize { get; }
+    protected abstract int MagSize { get; }
     protected abstract int Spread { get; }
     protected abstract float Delay { get; }
     [SerializeField] protected Transform bot;
@@ -17,7 +17,7 @@ public abstract class BOTweapon : MonoBehaviour
     protected int ammo;
     private void Start()
     {
-        ammo = Magsize;
+        ammo = MagSize;
     }
     public abstract void Shoot();
     protected Vector3 GetSpread()
@@ -40,6 +40,6 @@ public abstract class BOTweapon : MonoBehaviour
     {
         yield return new WaitForSeconds(ReloadTime);
         canshoot = true;
-        ammo = Magsize;
+        ammo = MagSize;
     }
 }
